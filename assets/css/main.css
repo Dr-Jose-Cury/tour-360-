@@ -368,7 +368,7 @@ button {
   -webkit-transition: opacity 1s ease;
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
-  background: url(../img/dr\ jose\ cury.jpg);
+ background: url("https://raw.githubusercontent.com/Dr-Jose-Cury/tour-360-/refs/heads/main/assets/img/dr%20jose%20cury.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; /* Focus on top of image (face) */
