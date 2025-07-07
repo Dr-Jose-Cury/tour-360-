@@ -1,12 +1,68 @@
+section#contact {
+  margin-top: 50px;
+}
+#tour-360 iframe {
+  width: 100%;
+  max-width: 1320px;
+  min-height: 400px;
+  height: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  border: none;
+}
+
+@media (max-width: 600px) {
+  #tour-360 iframe {
+    height: 620px;
+    min-height: 420px;
+  }
+}
+/* TOUR 360: mais largo no desktop, responsivo no mobile */
+#tour-360 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 25px 35px;
+  border-radius: 15px;
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: 95vw;
+}
+
+#tour-360 iframe {
+  width: 100%;
+  max-width: 1320px;
+  min-height: 600px;
+  height: 800px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  #tour-360 {
+    max-width: 98vw;
+    padding: 10px 2vw;
+  }
+  #tour-360 iframe {
+    max-width: 96vw;
+    height: 600px;
+  }
+}
 /******************************************************************
 
 
-	------------------------
-	-- TABLE OF CONTENTS --
-	------------------------
-	
-	--  01. Basic
-	--  02. Preloader
+  ------------------------
+  -- TABLE OF CONTENTS --
+  ------------------------
+  
+  --  01. Basic
+  --  02. Preloader
     --  03. Image Container
     --  04. Content Area
     --  05. Content Area --> Intro
@@ -312,7 +368,7 @@ button {
   -webkit-transition: opacity 1s ease;
   -o-transition: opacity 1s ease;
   transition: opacity 1s ease;
-  background: url(../img/Foto.jpg);
+  background: url(../img/dr\ josé\ cury.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; /* Focus on top of image (face) */
@@ -375,8 +431,8 @@ button {
 }
 
 .content-area .content-area-inner section {
-  max-width: 700px;
-  margin: 0 auto 20vh auto;
+  max-width: 1200px;
+  margin: 0 auto 0vh auto;
 }
 
 .content-area .content-area-inner section:last-child {
@@ -419,7 +475,7 @@ button {
   margin: 0;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 0px solid rgba(255, 255, 255, 0.08);
   text-align: center;
 }
 
@@ -657,7 +713,7 @@ button {
   display: block;
 
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   padding: 0;
 
   text-align: left;
@@ -1131,7 +1187,7 @@ button {
   left: 0;
 
   height: 0;
-  margin-top: -1.6em;
+  margin-top: 1.6em;
   padding: 0 2em;
 
   -webkit-transition: 0.2s ease;
@@ -1278,9 +1334,8 @@ h6 {
   font-weight: 600; /* Semi-negrito para subtítulos */
 }
 
-/* Efeito de vidro / glass effect para seções */
+/* Efeito de vidro / glass effect para seções, exceto o tour 360 */
 section#about,
-section#service,
 section#work,
 section#contact,
 section#footer {
@@ -1294,12 +1349,22 @@ section#footer {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+section#service {
+  background: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
 /* Estilo específico para seção "Sobre Mim" */
 #about {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 30px;
   border-radius: 12px;
   margin-top: 40px;
+  margin-bottom: 120px; /* aumenta ainda mais a distância para o iframe/tour 360 */
 }
 
 #about h3.headline {
